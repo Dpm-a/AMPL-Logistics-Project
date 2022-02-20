@@ -1,0 +1,17 @@
+reset;
+model 20211214_two_ambulance.mod;
+data 20211214_two_ambulance.dat;
+option solver cplex;
+#option solver cplexamp;
+solve;
+display pop_cov;
+display Open;
+
+reset;
+model 20211214_one_ambulance.mod;
+data 20211214_one_ambulance.dat;
+option solver cplex;
+#option solver cplexamp;
+solve;
+display pop_cov;
+display Open;
